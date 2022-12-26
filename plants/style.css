@@ -23,6 +23,11 @@ button {
     padding: 14px 27px;
 }
 
+button:hover {
+    background-color: #E06733;
+    color: #FFFFFF;
+}
+
 .container {
     max-width: 1220px;
     margin: 0 auto;
@@ -102,4 +107,39 @@ header {
     line-height: 35px;
     color: #636060;
     margin-bottom: 48px;
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    padding-top: 93px;
+    padding-bottom: 94px;
+}
+
+.information-info {
+    min-width: 605px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 146px;
+}
+
+.information-info-main {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    margin-bottom: 40px;
+    margin-top: 64px;
+}
+
+.information-info-list {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #636060;
 }
