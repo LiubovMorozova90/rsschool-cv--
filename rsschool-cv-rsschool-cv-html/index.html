@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<meta charset="UTF-8">
+<title>cv</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" href="cv-icon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body class="body">   
+    <header class="header">
+        <nav class="navigation">
+            <ul>
+              <li class="navbar list"><a href="#">About me</a></li>
+              <li class="navbar list"><a href="#">Skills</a></li>
+              <li class="navbar list"><a href="#">Code example</a></li>
+              <li class="navbar list"><a href="#">Work experienc</a></li>
+              <li class="navbar list"><a href="#">Education</a></li>
+              <li class="navbar"><a href="#">Languages</a></li>
+            </ul>
+          </nav>         
+    </header>
+    <main class="main">
+        <section class="contact_information">
+            <div class="contact_information_img">
+                <img src="liubov-img.jpg" title="Liubov Morozova" width="210px" height="250px">
+            </div>
+            <div class="contact_information_info">
+                <div class="info-block">
+                    <div>
+                        <h1>Liubov Morozova</h1>
+                        <h2>Front-End developer</h2>
+                    </div>
+                    <div>
+                        <h2>Contact:</h2>
+                        <pre>
+                        Email: liubov.morozova.90@mail.ru
+                        GitHub: LiubovMorozova90
+                        Address: Karaganda, Kazakhstan
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about_me">
+            <h2>About me</h2>
+            <span>
+                Hello!
+                <br> I have only recently started actively studying programming, 
+                but I have already been able to acquire some knowledge. I think programming is a very interesting field of study, where you can develop and improve!
+                <br> I am fond of dancing, I lead a healthy lifestyle.
+            </span>
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <table cellspacing="20" cellpadding="7" bordercolor="black" border="2">
+                <tr>
+                 <th>CSS</th>
+                 <th>HTML</th>
+                 <th>JavaScript</th>
+                 <th>Vue.js</th>
+                 <th>Nuxt.js</th>
+                </tr>
+            </table>
+        </section>
+        <section class="code_example">
+            <h2>Code example</h2>
+            <div class="code_example_">
+                <pre>
+                    div class="grid-text border-b-2 border-lightgreen relative"
+                        button class="flex" @click="isShown = !isShown"
+                          span class="text-white relative">{{ value }}
+                          /span
+                          img
+                            :src="require('@/static/img/chevron-down.svg')"
+                            class="main-img absolute ml-96 pl-2 z-40"
+                            alt=""
+                          /
+                        /button
+                        div
+                          v-show="isShown"
+                          class="border bg-lightgreen absolute w-full top-full px-2 py-2"
+                        
+                          p
+                            v-for="(item, index) in optionsList"
+                            :key="`item-${index}`"
+                            class="choice-country relative z-50"
+                            @click="updateValue(item.title)"
+                          
+                            {{ item.title }}
+                          /p
+                        /div
+                      /div
+                </pre>
+            </div>
+        </section>
+        <section class="work_experienc">
+            <h2>Work experienc</h2>
+            <div class="work_experienc_info">
+                <span><a href="https://github.com/LiubovMorozova90/Pony-Express-master">Pony-Express-master</a></span>
+                <span><a href="https://github.com/LiubovMorozova90/rsschool-cv">RSSchool-cv</a></span>
+            </div>            
+        </section>
+        <section class="education">
+            <h2>Education</h2>
+            <div>
+                <h3>♦ College:</h3>
+                <span>Russian Academy, 2019 - Lawyer</span>
+                <h3>♦  Institute:</h3>
+                <span>Law Academy, 2022 - Lawyer</span>
+            </div>
+        </section>
+        <section class="languages">
+            <h2>Languages</h2>
+            <span>
+                Russian - native speaker
+                English - A2 
+            </span>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="autor">
+            <h3>Autor</h3>
+            <span>
+                <a href="https://github.com/LiubovMorozova90">LiubovMorozova90</a>
+            </span>
+        </div>
+        <div class="years">
+            <h3>Year of creation</h3>
+            <span>2022</span>
+        </div>
+        <div class="logo">
+            <a href="https://rs.school/js/"><img src="rs_school_js.svg" width="100px" height="100px"></a>
+            
+        </div>
+    </footer>
+</body>
+</html>
