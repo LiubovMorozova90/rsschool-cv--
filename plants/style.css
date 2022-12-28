@@ -67,15 +67,15 @@ header {
     color: #000000;
 }
 
-.nav-main {
-    color: #E06733;
-}
-
 .nav {
     color: #010201;
 }
 
-.title {
+.nav:hover {
+    color: #E06733;
+}
+
+.welcome {
     display: flex;
     flex-direction: row;     
     padding-top: 60px;
@@ -109,7 +109,7 @@ header {
     margin-bottom: 48px;
 }
 
-.information {
+.about {
     display: flex;
     flex-direction: row;
     background-color: #FFFFFF;
@@ -131,6 +131,7 @@ header {
     font-size: 40px;
     line-height: 52px;
     color: #499A18;
+    max-width: 463px;
     margin-bottom: 40px;
     margin-top: 64px;
 }
@@ -142,4 +143,23 @@ header {
     font-size: 20px;
     line-height: 30px;
     color: #636060;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    background-color: #EDF2EC;
+    padding-top: 40px;
+    padding-bottom: 121px;
+}
+
+.service-info-main {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    max-width: 306px;
+    margin-right: 142px;
 }
