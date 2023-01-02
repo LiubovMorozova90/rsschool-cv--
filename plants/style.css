@@ -21,6 +21,7 @@ button {
     font-size: 16px;
     line-height: 20px;
     padding: 14px 27px;
+    background-color: inherit;
 }
 
 button:hover {
@@ -35,6 +36,10 @@ button:hover {
 
 header {
     background-color: #EDF2EC;
+}
+
+footer {
+    padding: 40px 109px;
 }
 
 .navigation {    
@@ -198,11 +203,189 @@ header {
 .projects {
     display: grid;
     gap: 116px;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .projects-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 1px solid #E3E1D5;
     border-radius: 20px;
+    padding-bottom: 36px;
     margin-bottom: 50px;
+}
+
+.projects-block-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #E06733;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.projects-block-list {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #717171;
+}
+
+.prices {
+    padding-top: 40px;
+    padding-bottom: 130px;
+}
+
+.prices-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.prices-block-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 38px;
+}
+
+.prices-info-main {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.prices-info-list {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: right;
+    max-width: 452px;
+    color: #000000;
+}
+
+.prices-btn {
+    font-weight: 700;
+    font-size: 18px;
+    color: #E06733;
+    margin-bottom: 39px;
+}
+
+.prices-block-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices-block-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    padding: 34px 41px;
+}
+
+.prices-block-projects-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;    
+    background-color: #EDF2EC;
+    border-radius: 20px;
+    padding: 17px 40px;
+}
+
+.prices-block-projects-info-main {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.prices-block-projects-info-img {
+    display: block;
+    cursor: pointer;
+}
+
+.prices-block-btn-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts {
+    background-color: #EDF2EC;
+    padding-top: 55px;
+}
+
+.contacts-block {
+    display: flex;
+    flex-direction: row;
+    gap: 113px;
+}
+
+.contacts-info-block-title {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    align-items: flex-start;
+}
+
+.contacts-info-drop {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 450px;
+    padding: 5px 20px;
+    margin-left: 250px;
+}
+
+.contacts-info-drop-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+}
+
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 320px;
+    align-items: center;
+}
+
+.autor {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.social_media {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.social_media-items {
+    cursor: pointer;
 }
